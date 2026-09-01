@@ -1,15 +1,17 @@
 #include <iostream>
 
+using namespace std;
+
 int main(int argc, char** argv) {
    float temp{};
 
-   std::cout << "Enter a temperature in Fahrenheit: "
-   std::cin >> temp;
+   cout << "Enter a temperature in Fahrenheit: ";
+   cin >> temp;
 
    if ( temp < 32 ) {
-       std::cout << "Above freezing!\n"
+       cout << "Below freezing!\n";
    } else {
-       std::cout << "Below freezing!\n"
+       cout << "Above freezing!\n";
    }
 
    return 0;
